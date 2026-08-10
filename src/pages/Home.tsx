@@ -52,21 +52,27 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 items-center">
             {/* Left Column: 60% */}
-            <div className="md:col-span-7 flex flex-col gap-8">
+            <div className="md:col-span-7 flex flex-col gap-10">
               <Parallax offset={30}>
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-8">
                 <FadeIn delay={0.1}><h1 className="font-display-lg text-display-lg-mobile md:text-display-lg leading-[1.1] text-white-pure">
                   <span dangerouslySetInnerHTML={{ __html: t('home.heroTitleHTML') }} />
                 </h1></FadeIn>
-                <FadeIn delay={0.2}><p className="font-body-lg text-body-lg text-white-pure/90 text-justify">
+                <FadeIn delay={0.2}><p className="font-body-lg text-body-lg text-white-pure/90 text-justify leading-relaxed max-w-2xl">
                   Kami menghadirkan layanan meal prep premium yang menyajikan cita rasa autentik Indonesia, disesuaikan khusus untuk mendukung gaya hidup sehat dan dinamis Anda. Setiap porsi dikurasi dengan cermat menggunakan bahan-bahan alami berkualitas tinggi, dengan perhitungan nutrisi makro yang seimbang, serta disajikan dalam kemasan yang ramah lingkungan.
                 </p></FadeIn>
               </div>
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
+              <div className="flex flex-col items-start gap-4 mt-4">
                 <FadeIn delay={0.3}><a href="/contact#contact-form" className="px-8 py-4 rounded-full hover:opacity-90 hover:scale-[1.02] transition-all duration-300 font-label-md text-label-md inline-flex items-center gap-2 shadow-[0_0_0_4px_rgba(182,69,44,0.2)] bg-kertas-nasi text-merah-bata">
                   {t('nav.orderNow')}
                   <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
                 </a></FadeIn>
+                <FadeIn delay={0.4}>
+                  <p className="font-body-md text-sm text-white-pure/80 flex items-center gap-2 mt-2">
+                    <span className="material-symbols-outlined text-[16px]">verified</span>
+                    {t('home.heroBtnHint') || 'Konsultasi gratis dengan tim ahli gizi kami untuk pesanan pertama Anda.'}
+                  </p>
+                </FadeIn>
               </div>
               {/* Feature Icons at Bottom */}
               <FadeIn delay={0.4} className="grid grid-cols-3 gap-4 pt-8 border-t border-white-pure/20">
