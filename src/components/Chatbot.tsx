@@ -44,14 +44,18 @@ export default function Chatbot() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to get response');
+        const errorData = await response.json().catch(() => null);
+        throw new Error(errorData?.error || 'Failed to get response');
       }
 
       const data = await response.json();
       setMessages(prev => [...prev, { role: 'model', content: data.reply }]);
-    } catch (error) {
+    } catch (error: any) {
       console.error('Chatbot error:', error);
-      setMessages(prev => [...prev, { role: 'model', content: t('chatbot.error') }]);
+      const errorMessage = error.message && error.message.includes('GEMINI_API_KEY') 
+        ? "Sistem belum dikonfigurasi. Mohon tambahkan GEMINI_API_KEY di Vercel Environment Variables." 
+        : t('chatbot.error');
+      setMessages(prev => [...prev, { role: 'model', content: errorMessage }]);
     } finally {
       setIsLoading(false);
     }
