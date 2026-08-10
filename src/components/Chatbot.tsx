@@ -52,9 +52,7 @@ export default function Chatbot() {
       setMessages(prev => [...prev, { role: 'model', content: data.reply }]);
     } catch (error: any) {
       console.error('Chatbot error:', error);
-      const errorMessage = error.message && error.message.includes('GEMINI_API_KEY') 
-        ? "Sistem belum dikonfigurasi. Mohon tambahkan GEMINI_API_KEY di Vercel Environment Variables." 
-        : t('chatbot.error');
+      const errorMessage = error.message || t('chatbot.error');
       setMessages(prev => [...prev, { role: 'model', content: errorMessage }]);
     } finally {
       setIsLoading(false);
