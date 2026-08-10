@@ -24,6 +24,7 @@ export const en = {
     tag3: 'Daily Delivery',
     tag4: '100% Natural Ingredients',
     heroSubtitle: 'Every portion is precisely calculated for optimal macronutrients, supporting your health goals.',
+    heroBtnHint: 'Free consultation with our nutritionist for your first order.',
     trustedBy: 'Trusted by teams at',
     whyChooseUs: 'Why Choose Us',
     whyDesc: 'Premium quality in every portion, combining culinary traditions with modern nutritional needs.',
@@ -86,11 +87,17 @@ export const en = {
     dessert: 'Dessert'
   },
   promo: {
+    heroTitle: 'Save & Healthy',
+    heroDesc: 'Enjoy the deliciousness of premium Nusantara dishes with a much more friendly price offer. Through this special promo, you have the opportunity to start a healthy lifestyle journey without having to worry about spending budget. Subscribe now and experience the real benefits of daily nutritious intake with us.',
+    viewOffers: 'View Offers',
+    choosePackageText: 'Choose the Right Package for You',
 
     title: 'Special Promo',
     desc: 'Order more, pay less. Perfect for families or teams in the office.',
     personalPack: 'Personal Pack',
     duoSehat: 'Healthy Duo',
+    weekly: 'Weekly',
+    monthly: 'Monthly',
     familyPack: 'Family Pack',
     mostPopular: 'Most Popular',
     choosePackage: 'Choose Package',
@@ -113,6 +120,7 @@ export const en = {
   contact: {
 
     title: 'Contact Us',
+    description: 'Nusantara Meal Prep is always here to provide the best nutrition solutions tailored to your personal needs. Do not hesitate to contact us if you would like to consult regarding meal package selections, provide feedback, or simply ask more about our services. Our professional team will be happy to assist you at any time.',
     subtitle: 'Send us a message',
     name: 'Name',
     company: 'Company',
@@ -168,5 +176,38 @@ export const en = {
     placeholder: 'Type your message...',
     title: 'Nusantara CS',
     status: 'Online'
+  }
+,
+  testimonials: {
+  t1: {
+    name: 'Sari',
+    role: 'Busy Mother',
+    review: '"As a working mother, Nusantara Meal Prep is a lifesaver. Nutritious lunch without the headache of thinking about the menu."'
+  },
+  t2: {
+    name: 'Andi',
+    role: 'Software Engineer',
+    review: '"The rendang tastes authentic but not oily. A champion for those maintaining weight but missing Padang food."'
+  },
+  t3: {
+    name: 'Bima',
+    role: 'Marketing Executive',
+    review: '"Very helpful for me who often works overtime but wants to eat healthy. The gado-gado is awesome."'
+  },
+  t4: {
+    name: 'Rina',
+    role: 'Yoga Instructor',
+    review: '"The quality of the ingredients feels very premium. Especially the vegetables which are always fresh and crunchy."'
+  },
+  t5: {
+    name: 'Reza',
+    role: 'Content Creator',
+    review: '"The quality of the food ingredients feels very premium. Especially the vegetables which are always fresh and crunchy."'
+  },
+  t6: {
+    name: 'Nadia',
+    role: 'Nutrition Enthusiast',
+    review: '"The packaging is very proper and eco-friendly. A plus point for Nusantara Meal Prep for thinking about the sustainability aspect."'
+  }
   }
 };

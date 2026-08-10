@@ -51,7 +51,7 @@ export default function Promo() {
     }
   };
 
-  const textHeading = "Pilih Paket yang Pas Untuk Anda";
+  const textHeading = t('promo.choosePackageText');
 
   return (
     <>
@@ -60,12 +60,12 @@ export default function Promo() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl items-center relative z-10">
           <div className="space-y-sm">
             <span className="inline-block bg-secondary text-white-pure px-xs py-[4px] rounded-full font-label-md text-data-mono uppercase tracking-wider">{t('promo.title')}</span>
-            <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg">Hemat &amp; Sehat</h1>
+            <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg">{t('promo.heroTitle')}</h1>
             <p className="font-body-lg text-body-lg text-primary-fixed-dim opacity-90 text-justify">
-              Nikmati kelezatan hidangan Nusantara premium dengan penawaran harga yang jauh lebih bersahabat. Melalui promo spesial ini, Anda berkesempatan untuk memulai perjalanan hidup sehat tanpa perlu mengkhawatirkan anggaran pengeluaran. Berlanggananlah sekarang dan rasakan sendiri manfaat nyata dari asupan bergizi setiap hari bersama kami.
+              {t('promo.heroDesc')}
             </p>
             <div className="pt-sm">
-              <a className="inline-block bg-white-pure text-primary font-label-md text-label-md px-md py-sm rounded hover:bg-surface-variant transition-colors duration-200" href="#bundle">Lihat Penawaran</a>
+              <a className="inline-block bg-white-pure text-primary font-label-md text-label-md px-md py-sm rounded hover:bg-surface-variant transition-colors duration-200" href="#bundle">{t('promo.viewOffers')}</a>
             </div>
           </div>
           <div className="relative h-64 md:h-96 rounded-xl overflow-hidden shadow-2xl shadow-primary/20">
@@ -94,13 +94,13 @@ export default function Promo() {
               className={`relative z-10 px-6 py-2 text-sm font-semibold rounded-full transition-colors duration-200 ${billingPeriod === 'weekly' ? 'text-[#b6452c]' : 'text-on-surface-variant hover:text-on-surface'}`}
               onClick={() => setBillingPeriod('weekly')}
             >
-              Mingguan
+              {t('promo.weekly')}
             </button>
             <button 
               className={`relative z-10 px-6 py-2 text-sm font-semibold rounded-full transition-colors duration-200 ${billingPeriod === 'monthly' ? 'text-[#b6452c]' : 'text-on-surface-variant hover:text-on-surface'}`}
               onClick={() => setBillingPeriod('monthly')}
             >
-              Bulanan
+              {t('promo.monthly')}
             </button>
           </div>
         </div>

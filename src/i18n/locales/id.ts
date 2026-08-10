@@ -24,6 +24,7 @@ export const id = {
     tag3: 'Pengiriman Harian',
     tag4: '100% Bahan Alami',
     heroSubtitle: 'Setiap porsi dihitung presisi untuk makronutrisi optimal, mendukung target kesehatan Anda.',
+    heroBtnHint: 'Konsultasi gratis dengan tim ahli gizi kami untuk pesanan pertama Anda.',
     trustedBy: 'Dipercaya oleh tim di',
     whyChooseUs: 'Kenapa Memilih Kami',
     whyDesc: 'Kualitas premium dalam setiap porsi, memadukan tradisi kuliner dengan kebutuhan nutrisi masa kini.',
@@ -87,11 +88,17 @@ export const id = {
     
   },
   promo: {
+    heroTitle: 'Hemat & Sehat',
+    heroDesc: 'Nikmati kelezatan hidangan Nusantara premium dengan penawaran harga yang jauh lebih bersahabat. Melalui promo spesial ini, Anda berkesempatan untuk memulai perjalanan hidup sehat tanpa perlu mengkhawatirkan anggaran pengeluaran. Berlanggananlah sekarang dan rasakan sendiri manfaat nyata dari asupan bergizi setiap hari bersama kami.',
+    viewOffers: 'Lihat Penawaran',
+    choosePackageText: 'Pilih Paket yang Pas Untuk Anda',
 
     title: 'Promo Spesial',
     desc: 'Pesan lebih banyak, bayar lebih hemat. Cocok untuk keluarga atau tim di kantor.',
     personalPack: 'Personal Pack',
     duoSehat: 'Duo Sehat',
+    weekly: 'Mingguan',
+    monthly: 'Bulanan',
     familyPack: 'Family Pack',
     mostPopular: 'Paling Populer',
     choosePackage: 'Pilih Paket',
@@ -114,6 +121,7 @@ export const id = {
   contact: {
 
     title: 'Hubungi Kami',
+    description: 'Nusantara Meal Prep senantiasa hadir untuk memberikan solusi nutrisi terbaik yang disesuaikan dengan kebutuhan personal Anda. Jangan ragu untuk menghubungi kami jika Anda ingin berkonsultasi mengenai pemilihan paket makanan, memberikan masukan, atau sekadar bertanya lebih lanjut seputar layanan kami. Tim profesional kami akan dengan senang hati membantu Anda setiap saat.',
     subtitle: 'Kirimkan Pesan',
     name: 'Nama',
     company: 'Perusahaan',
@@ -169,5 +177,36 @@ export const id = {
     placeholder: 'Ketik pesan Anda...',
     title: 'Nusantara CS',
     status: 'Online'
+  }
+,
+  testimonials: {
+  t1: {
+    name: 'Sari',
+    role: 'Bunda Sibuk',
+    review: '"Sebagai ibu yang bekerja, Nusantara Meal Prep adalah penyelamat. Makan siang bergizi tanpa pusing mikir menu."'
+  },
+  t2: {
+    name: 'Andi',
+    role: 'Software Engineer',
+    review: '"Rasa rendangnya autentik tapi tidak berminyak. Juara buat yang lagi maintain berat badan tapi kangen masakan Padang."'
+  },
+  t3: {
+    name: 'Bima',
+    role: 'Marketing Executive',
+    review: '"Sangat membantu untuk saya yang sering lembur tapi ingin tetap makan sehat. Gado-gadonya mantap."'
+  },
+  t4: {
+    name: 'Citra', role: 'Fitness Enthusiast', review: '"Porsinya pas, protein tercukupi, dan ayam woku-nya bikin nagih banget!"'
+  },
+  t5: {
+    name: 'Reza',
+    role: 'Content Creator',
+    review: '"Kualitas bahan makanannya terasa sangat premium. Terutama sayurannya yang selalu fresh dan crunchy."'
+  },
+  t6: {
+    name: 'Nadia',
+    role: 'Nutrition Enthusiast',
+    review: '"Packagingnya sangat proper dan ramah lingkungan. Nilai plus untuk Nusantara Meal Prep karena memikirkan aspek sustainability."'
+  }
   }
 };

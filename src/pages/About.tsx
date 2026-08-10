@@ -10,7 +10,7 @@ export default function About() {
       <section className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xxl mb-xxl text-center">
         <FadeIn><h1 className="font-display-lg text-display-lg md:text-display-lg text-primary mb-md">{t('about.heroTitle1')}<br />{t('about.heroTitle2')}</h1></FadeIn>
         <FadeIn delay={0.1}><p className="font-body-lg text-body-lg max-w-3xl mx-auto text-on-surface-variant">
-          Kami percaya bahwa makan sehat tidak harus mengorbankan kenikmatan rempah warisan leluhur. Nusantara Meal Prep hadir untuk memadukan kearifan kuliner Indonesia dengan ilmu gizi modern, memberikan energi terbaik untuk hari Anda.
+          {t('about.heroSubDesc')}
         </p></FadeIn>
       </section>
 
@@ -23,10 +23,10 @@ export default function About() {
           <div>
             <FadeIn><h2 className="font-headline-md text-headline-md text-primary mb-md">{t('about.heroDesc')}</h2></FadeIn>
             <p className="font-body-md text-body-md mb-sm text-on-surface-variant">
-              Berawal dari kecintaan kami pada masakan rumahan dan tantangan menjaga pola makan seimbang di tengah kesibukan kota. Kami menyadari bahwa 'makanan sehat' seringkali identik dengan rasa yang hambar dan asing bagi lidah orang Indonesia.
+              {t('about.story1')}
             </p>
             <p className="font-body-md text-body-md text-on-surface-variant">
-              Dengan tekad membawa perubahan, kami mulai meracik ulang resep-resep tradisional—menurunkan natrium, mengganti jenis minyak, dan menghitung makronutrisi dengan presisi—tanpa menghilangkan jiwa dari hidangan tersebut. Kini, dari dapur keluarga yang sederhana, kami melayani ratusan porsi setiap harinya.
+              {t('about.story2')}
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function About() {
                 <span className="material-symbols-outlined text-on-primary text-4xl mb-sm">balance</span>
                 <h3 className="font-headline-md text-headline-md mb-xs">{t('about.val1Title')}</h3>
                 <p className="font-body-lg text-body-lg text-justify text-white-pure/90">
-                  Setiap menu yang kami hidangkan telah dirancang dan dihitung secara presisi oleh ahli gizi profesional. Kami memastikan bahwa keseimbangan makronutrisi—yang mencakup protein berkualitas, karbohidrat kompleks, serta lemak sehat—selalu menjadi prioritas utama dalam setiap resep kami, sehingga Anda mendapatkan asupan energi yang optimal untuk menunjang produktivitas sehari-hari.
+                  {t('about.val1DescAlt')}
                 </p>
               </div>
             </div>

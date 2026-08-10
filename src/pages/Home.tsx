@@ -59,7 +59,7 @@ export default function Home() {
                   <span dangerouslySetInnerHTML={{ __html: t('home.heroTitleHTML') }} />
                 </h1></FadeIn>
                 <FadeIn delay={0.2}><p className="font-body-lg text-body-lg text-white-pure/90 text-justify leading-relaxed max-w-2xl">
-                  Kami menghadirkan layanan meal prep premium yang menyajikan cita rasa autentik Indonesia, disesuaikan khusus untuk mendukung gaya hidup sehat dan dinamis Anda. Setiap porsi dikurasi dengan cermat menggunakan bahan-bahan alami berkualitas tinggi, dengan perhitungan nutrisi makro yang seimbang, serta disajikan dalam kemasan yang ramah lingkungan.
+                  {t('home.heroDesc2')}
                 </p></FadeIn>
               </div>
               <div className="flex flex-col items-start gap-4 mt-4">
@@ -70,7 +70,7 @@ export default function Home() {
                 <FadeIn delay={0.4}>
                   <p className="font-body-md text-sm text-white-pure/80 flex items-center gap-2 mt-2">
                     <span className="material-symbols-outlined text-[16px]">verified</span>
-                    {t('home.heroBtnHint') || 'Konsultasi gratis dengan tim ahli gizi kami untuk pesanan pertama Anda.'}
+                    {t('home.heroBtnHint')}
                   </p>
                 </FadeIn>
               </div>
@@ -197,7 +197,7 @@ export default function Home() {
               <p className="font-body-md text-body-md text-white-pure/80">{t('home.menuDesc')}</p>
             </div>
             <a className="hidden md:inline-flex items-center gap-1 font-label-md text-label-md text-white-pure hover:text-white-pure/80 transition-colors" href="#">
-              Lihat Semua <span className="material-symbols-outlined text-[18px]">chevron_right</span>
+              {t('home.seeAll')} <span className="material-symbols-outlined text-[18px]">chevron_right</span>
             </a>
           </div>
           
@@ -270,11 +270,11 @@ export default function Home() {
             <span className="font-label-md text-label-md text-merah-bata tracking-widest uppercase mb-4">{t('home.b2bLabel')}</span>
             <FadeIn><h2 className="font-headline-md-mobile text-headline-md-mobile md:font-headline-md md:text-headline-md text-tinta-daun mb-6">{t('home.heroTitle')}</h2></FadeIn>
             <p className="font-body-md text-body-md text-tinta-daun/80 mb-8">
-              Tingkatkan kesejahteraan dan performa tim Anda dengan langganan makan siang sehat dari Nusantara Meal Prep. Solusi praktis untuk kantor modern.
+              {t('home.b2bDesc2')}
             </p>
             <div>
               <button className="bg-merah-bata text-white-pure px-8 py-4 rounded-full hover:bg-tinta-daun transition-colors duration-200 font-label-md text-label-md">
-                Hubungi Tim Sales
+                {t('home.contactSales')}
               </button>
             </div>
             </Parallax>
@@ -314,30 +314,30 @@ export default function Home() {
             
             {/* Column 1 (Scroll Down) */}
             <Parallax offset={50} className="flex-1 flex flex-col"><div className="flex-1 flex flex-col gap-6 animate-scroll-down pause-on-hover" style={{ animationDuration: '40s' }}>
-              {[...Array(2)].map((_, i) => (
+              {[1, 2].map((_, i) => (
                 <React.Fragment key={i}>
                   <div className="testimonial-card bg-white-pure/10 backdrop-blur-md p-8 rounded-32 border border-white-pure/20 relative z-0">
                     <div className="flex items-center gap-4 mb-6">
-                      <img alt="Sari" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANIPsy3ti1WPNnOTy4vvDW8xMGj58sPeVCzVSSAAamGxenYcQVlQ5it_jYp0ksYeLTVlG1i2SXQy2XLlEPr-Y6bc98jDFJq-uGxDPByvM8TGiwcYCVxy1BRkLg7nJjZMAK9PYlQUyNylfhkJy5dwUSno9JpjItBF2FhLADFKIzWIuYP84jZ7LXNv7zUqVDm4j_wQZNpK4RCC5w0zJuP0lJkGAQsppGiapNrgNYeA04DjdV0iR-RDvj" />
+                      <img alt={t('testimonials.t1.name')} className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANIPsy3ti1WPNnOTy4vvDW8xMGj58sPeVCzVSSAAamGxenYcQVlQ5it_jYp0ksYeLTVlG1i2SXQy2XLlEPr-Y6bc98jDFJq-uGxDPByvM8TGiwcYCVxy1BRkLg7nJjZMAK9PYlQUyNylfhkJy5dwUSno9JpjItBF2FhLADFKIzWIuYP84jZ7LXNv7zUqVDm4j_wQZNpK4RCC5w0zJuP0lJkGAQsppGiapNrgNYeA04DjdV0iR-RDvj" />
                       <div>
-                        <h4 className="font-label-md text-label-md text-white-pure">Sari</h4>
-                        <p className="text-sm text-white-pure/70">Bunda Sibuk</p>
+                        <h4 className="font-label-md text-label-md text-white-pure">{t('testimonials.t1.name')}</h4>
+                        <p className="text-sm text-white-pure/70">{t('testimonials.t1.role')}</p>
                       </div>
                     </div>
-                    <p className="font-body-md text-body-md text-white-pure/90">"Sebagai ibu yang bekerja, Nusantara Meal Prep adalah penyelamat. Makan siang bergizi tanpa pusing mikir menu."</p>
+                    <p className="font-body-md text-body-md text-white-pure/90">{t('testimonials.t1.review')}</p>
                     <div className="flex gap-1 mt-4 text-white-pure/50">
                       {[1,2,3,4,5].map(star => <span key={star} className="material-symbols-outlined text-[18px]">star</span>)}
                     </div>
                   </div>
                   <div className="testimonial-card bg-white-pure/10 backdrop-blur-md p-8 rounded-32 border border-white-pure/20 relative z-0">
                     <div className="flex items-center gap-4 mb-6">
-                      <img alt="Andi" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuYdAnmqPR8o1HnNm1D6S0aZbgXU0JNvSWsz7bsnZ9WdRbYV7VtHP01t-hnJlEgLLTGHzocYE2h-cH9DDasfdDpF-7ySfAOlMtB8OOOLFsggvWQjsa2QJluOqpidgGQCiKNg6aT55wjsbKh8qnI1h1F42vwy18DEBWNJtDfi7gxioswa_q-TUz1AdTgz50ny6Wae6gDFmQugMLfLVI61Yc1dsycuM72fJwsUQ4nie7wIbWspD9erA5" />
+                      <img alt={t('testimonials.t2.name')} className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuYdAnmqPR8o1HnNm1D6S0aZbgXU0JNvSWsz7bsnZ9WdRbYV7VtHP01t-hnJlEgLLTGHzocYE2h-cH9DDasfdDpF-7ySfAOlMtB8OOOLFsggvWQjsa2QJluOqpidgGQCiKNg6aT55wjsbKh8qnI1h1F42vwy18DEBWNJtDfi7gxioswa_q-TUz1AdTgz50ny6Wae6gDFmQugMLfLVI61Yc1dsycuM72fJwsUQ4nie7wIbWspD9erA5" />
                       <div>
-                        <h4 className="font-label-md text-label-md text-white-pure">Andi</h4>
-                        <p className="text-sm text-white-pure/70">Software Engineer</p>
+                        <h4 className="font-label-md text-label-md text-white-pure">{t('testimonials.t2.name')}</h4>
+                        <p className="text-sm text-white-pure/70">{t('testimonials.t2.role')}</p>
                       </div>
                     </div>
-                    <p className="font-body-md text-body-md text-white-pure/90">"Rasa rendangnya autentik tapi tidak berminyak. Juara buat yang lagi maintain berat badan tapi kangen masakan Padang."</p>
+                    <p className="font-body-md text-body-md text-white-pure/90">{t('testimonials.t2.review')}</p>
                     <div className="flex gap-1 mt-4 text-white-pure/50">
                       {[1,2,3,4,5].map(star => <span key={star} className="material-symbols-outlined text-[18px]">star</span>)}
                     </div>
@@ -348,30 +348,30 @@ export default function Home() {
 
             {/* Column 2 (Scroll Up - Hidden Mobile) */}
             <Parallax offset={-30} className="hidden md:flex flex-1 flex-col"><div className="flex-1 flex flex-col gap-6 animate-scroll-up pause-on-hover" style={{ animationDuration: '35s' }}>
-               {[...Array(2)].map((_, i) => (
+               {[1, 2].map((_, i) => (
                 <React.Fragment key={i}>
                   <div className="testimonial-card bg-white-pure/10 backdrop-blur-md p-8 rounded-32 border border-white-pure/20 relative z-0">
                     <div className="flex items-center gap-4 mb-6">
-                      <img alt="Bima" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs-JHn-fbKWPL0LdLy9EUaUli4U73oyceKa8taMblTuepqgAwMx5AO0lBnYvED8_MydgLXYVZ7OhHKN0EqB_DvXw-UbN4EanjKv2fdh_5vM6hVyAKRvDc4gsuffJohZYchXIzQwzSAAleXQnDvL6HRXkKU2On5DWuDmJJ0mYjAC5AEes441YO9lEGRwk8a2uVKBvK9Uaq52PYrHqdEcjByONhGwWWW9I1rgsptk_hZaU-Q8-v1qjn1" />
+                      <img alt={t('testimonials.t3.name')} className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs-JHn-fbKWPL0LdLy9EUaUli4U73oyceKa8taMblTuepqgAwMx5AO0lBnYvED8_MydgLXYVZ7OhHKN0EqB_DvXw-UbN4EanjKv2fdh_5vM6hVyAKRvDc4gsuffJohZYchXIzQwzSAAleXQnDvL6HRXkKU2On5DWuDmJJ0mYjAC5AEes441YO9lEGRwk8a2uVKBvK9Uaq52PYrHqdEcjByONhGwWWW9I1rgsptk_hZaU-Q8-v1qjn1" />
                       <div>
-                        <h4 className="font-label-md text-label-md text-white-pure">Bima</h4>
-                        <p className="text-sm text-white-pure/70">Marketing Executive</p>
+                        <h4 className="font-label-md text-label-md text-white-pure">{t('testimonials.t3.name')}</h4>
+                        <p className="text-sm text-white-pure/70">{t('testimonials.t3.role')}</p>
                       </div>
                     </div>
-                    <p className="font-body-md text-body-md text-white-pure/90">"Sangat membantu untuk saya yang sering lembur tapi ingin tetap makan sehat. Gado-gadonya mantap."</p>
+                    <p className="font-body-md text-body-md text-white-pure/90">{t('testimonials.t3.review')}</p>
                     <div className="flex gap-1 mt-4 text-white-pure/50">
                       {[1,2,3,4,5].map(star => <span key={star} className="material-symbols-outlined text-[18px]">star</span>)}
                     </div>
                   </div>
                   <div className="testimonial-card bg-white-pure/10 backdrop-blur-md p-8 rounded-32 border border-white-pure/20 relative z-0">
                     <div className="flex items-center gap-4 mb-6">
-                      <img alt="Citra" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjMHZ_1ei4qn67PtCQtqQ5XUzcXIrWnvda01NK8c6svxzxmL4avXjZs7ZUUO0FLvqCYiowq9WftIqhDqiw-PWxoSfptceG8CCV2Qj1FP6TSwrF1N09UA7IhpFH_-IA4o5IMipxUmjJHEBcxdPRZszy0cciIIxcg_R0LADKRMQZMMeTP6sEob8LCSswWxG3WU6K6X29IS2S7YScZv_XxGnEQvsdWcFsP0aPz_24QhuXSDKTCA5mam0u" />
+                      <img alt={t('testimonials.t4.name')} className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjMHZ_1ei4qn67PtCQtqQ5XUzcXIrWnvda01NK8c6svxzxmL4avXjZs7ZUUO0FLvqCYiowq9WftIqhDqiw-PWxoSfptceG8CCV2Qj1FP6TSwrF1N09UA7IhpFH_-IA4o5IMipxUmjJHEBcxdPRZszy0cciIIxcg_R0LADKRMQZMMeTP6sEob8LCSswWxG3WU6K6X29IS2S7YScZv_XxGnEQvsdWcFsP0aPz_24QhuXSDKTCA5mam0u" />
                       <div>
-                        <h4 className="font-label-md text-label-md text-white-pure">Citra</h4>
-                        <p className="text-sm text-white-pure/70">Fitness Enthusiast</p>
+                        <h4 className="font-label-md text-label-md text-white-pure">{t('testimonials.t4.name')}</h4>
+                        <p className="text-sm text-white-pure/70">{t('testimonials.t4.role')}</p>
                       </div>
                     </div>
-                    <p className="font-body-md text-body-md text-white-pure/90">"Porsinya pas, protein tercukupi, dan ayam woku-nya bikin nagih banget!"</p>
+                    <p className="font-body-md text-body-md text-white-pure/90">{t('testimonials.t4.review')}</p>
                     <div className="flex gap-1 mt-4 text-white-pure/50">
                       {[1,2,3,4,5].map(star => <span key={star} className="material-symbols-outlined text-[18px]">star</span>)}
                     </div>
@@ -382,30 +382,30 @@ export default function Home() {
 
             {/* Column 3 (Scroll Down - Hidden Mobile & Tablet) */}
             <Parallax offset={70} className="hidden lg:flex flex-1 flex-col"><div className="flex-1 flex flex-col gap-6 animate-scroll-down pause-on-hover" style={{ animationDuration: '45s' }}>
-              {[...Array(2)].map((_, i) => (
+               {[1, 2].map((_, i) => (
                 <React.Fragment key={i}>
                   <div className="testimonial-card bg-white-pure/10 backdrop-blur-md p-8 rounded-32 border border-white-pure/20 relative z-0">
                     <div className="flex items-center gap-4 mb-6">
-                      <img alt="Reza" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD68bU7wrRlTp3zerkhkvyRctNGXIDYfHJ5DFtRhGH9vylU9JN5zzaXIUqn9zkxVdlSq4LCN5rEPNfuPdGnGe5A3EiWzLezueM3d0M4XRAQFcWqBYqnqzzE5J4CTpSvcbS7UOrlsIJavZuC-8Musvnhhk3UX6DrQUt0yurCk9YExUr4iwomeXSJZR1EuEA48amHW0ybM7SD6hrrDW7YGJVDCzHEnzgNBUonU-UIFbT2GGS4IhJXQyeV" />
+                      <img alt={t('testimonials.t5.name')} className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD68bU7wrRlTp3zerkhkvyRctNGXIDYfHJ5DFtRhGH9vylU9JN5zzaXIUqn9zkxVdlSq4LCN5rEPNfuPdGnGe5A3EiWzLezueM3d0M4XRAQFcWqBYqnqzzE5J4CTpSvcbS7UOrlsIJavZuC-8Musvnhhk3UX6DrQUt0yurCk9YExUr4iwomeXSJZR1EuEA48amHW0ybM7SD6hrrDW7YGJVDCzHEnzgNBUonU-UIFbT2GGS4IhJXQyeV" />
                       <div>
-                        <h4 className="font-label-md text-label-md text-white-pure">Reza</h4>
-                        <p className="text-sm text-white-pure/70">Content Creator</p>
+                        <h4 className="font-label-md text-label-md text-white-pure">{t('testimonials.t5.name')}</h4>
+                        <p className="text-sm text-white-pure/70">{t('testimonials.t5.role')}</p>
                       </div>
                     </div>
-                    <p className="font-body-md text-body-md text-white-pure/90">"Kualitas bahan makanannya terasa sangat premium. Terutama sayurannya yang selalu fresh dan crunchy."</p>
+                    <p className="font-body-md text-body-md text-white-pure/90">{t('testimonials.t5.review')}</p>
                     <div className="flex gap-1 mt-4 text-white-pure/50">
                       {[1,2,3,4,5].map(star => <span key={star} className="material-symbols-outlined text-[18px]">star</span>)}
                     </div>
                   </div>
                   <div className="testimonial-card bg-white-pure/10 backdrop-blur-md p-8 rounded-32 border border-white-pure/20 relative z-0">
                     <div className="flex items-center gap-4 mb-6">
-                      <img alt="Nadia" className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0INsG-4Ne0NfP-wZvQE01d7Dea8Wc4n5SSYD9qxQFrtqHFMT2MMONncQeyoMJukLGW1cWo-2jH_UghlAToRteDeS13hisb0zOBOyjmGPMT2RqTEsVQuBR6qfaGnM_aDq7dCUso44b0p31iN6_ojiblvDnq_6nGVhfnmuCjtes5gb90wMEaNP83HJa_d8oETnGMJXm60e2UlnwerHnEoN2kY1fLf91pW3CApmsNhyBBozYS_1DW_yz" />
+                      <img alt={t('testimonials.t6.name')} className="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0INsG-4Ne0NfP-wZvQE01d7Dea8Wc4n5SSYD9qxQFrtqHFMT2MMONncQeyoMJukLGW1cWo-2jH_UghlAToRteDeS13hisb0zOBOyjmGPMT2RqTEsVQuBR6qfaGnM_aDq7dCUso44b0p31iN6_ojiblvDnq_6nGVhfnmuCjtes5gb90wMEaNP83HJa_d8oETnGMJXm60e2UlnwerHnEoN2kY1fLf91pW3CApmsNhyBBozYS_1DW_yz" />
                       <div>
-                        <h4 className="font-label-md text-label-md text-white-pure">Nadia</h4>
-                        <p className="text-sm text-white-pure/70">{t('roles.chiefNutritionist')}</p>
+                        <h4 className="font-label-md text-label-md text-white-pure">{t('testimonials.t6.name')}</h4>
+                        <p className="text-sm text-white-pure/70">{t('testimonials.t6.role')}</p>
                       </div>
                     </div>
-                    <p className="font-body-md text-body-md text-white-pure/90">"Packagingnya sangat proper dan ramah lingkungan. Nilai plus untuk Nusantara Meal Prep karena memikirkan aspek sustainability."</p>
+                    <p className="font-body-md text-body-md text-white-pure/90">{t('testimonials.t6.review')}</p>
                     <div className="flex gap-1 mt-4 text-white-pure/50">
                       {[1,2,3,4,5].map(star => <span key={star} className="material-symbols-outlined text-[18px]">star</span>)}
                     </div>

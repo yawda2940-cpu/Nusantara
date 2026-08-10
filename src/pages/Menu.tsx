@@ -54,18 +54,16 @@ export default function Menu() {
       <section className="relative max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl md:py-xxl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
           <div className="md:col-span-5 space-y-6 z-10">
-            <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
-              Rasa Tradisi, <br />Nutrisi Masa Kini.
-            </h1>
+            <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary" dangerouslySetInnerHTML={{ __html: t('menu.heroTitle') }} />
             <p className="font-body-lg text-body-lg text-on-surface-variant text-justify">
-              Pilihlah program meal prep yang paling sesuai dengan kebutuhan serta gaya hidup Anda. Setiap menu yang kami tawarkan dirancang secara khusus oleh ahli gizi berpengalaman dan dimasak menggunakan racikan bumbu otentik Indonesia. Kami memadukan kekayaan rempah tradisional dengan standar nutrisi modern untuk menyajikan hidangan yang tidak hanya lezat, tetapi juga menyehatkan.
+              {t('menu.heroDesc')}
             </p>
             <div className="flex gap-4 pt-4">
               <a href="/promo" className="bg-primary text-white-pure font-label-md text-label-md px-8 py-3 rounded hover:bg-primary-container transition-colors inline-block">
-                Lihat Paket
+                {t('menu.viewPackages')}
               </a>
               <a href="https://wa.me/6287881485375" target="_blank" rel="noopener noreferrer" className="border border-tinta-daun text-secondary font-label-md text-label-md px-8 py-3 rounded hover:bg-surface-container transition-colors inline-block">
-                Konsultasi Gizi
+                {t('menu.nutritionConsult')}
               </a>
             </div>
           </div>
@@ -77,8 +75,8 @@ export default function Menu() {
                   <ParallaxImage alt="High Protein Menu" className="transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4XQvAc0PYZpQHY5uvBuFPZlwFAqGAatyQF_shrLZLJDUJmi36S45ghunYRpBvyejTDobwd9YGSCoTaThbsjXFY_0w70vnb-ii-zKQgHrSzhr5o446G7tngLRFrjRW3z3ZzxD6RUd_GesZZ9ykNoD24lYKCnZRSe31JfTd40dEXSqC27dyOaBXVIDUgBgCsmwoPd4nhKKhQGM4eaeMAdevl9YERXbxN8Jys38HJGkFxP4qFTCY-wuF" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-white-pure text-primary font-label-md text-[11px] px-2 py-1 rounded mb-2 inline-block">Tinggi Protein</span>
-                    <h3 className="font-headline-md-mobile text-headline-md-mobile text-white-pure">Otot Kuat</h3>
+                    <span className="bg-white-pure text-primary font-label-md text-[11px] px-2 py-1 rounded mb-2 inline-block">{t('menu.highProtein')}</span>
+                    <h3 className="font-headline-md-mobile text-headline-md-mobile text-white-pure">{t('menu.strongMuscle')}</h3>
                   </div>
                 </div>
               </div>
@@ -87,16 +85,16 @@ export default function Menu() {
                   <ParallaxImage alt="Plant-Based Menu" className="transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_5-9ooiwoIjB76M3Y8xTDakmAUJB0TsJB3zBgA1bdW8K-KzVkbiv3xK8yTS2GSoAy_OIpDR9NWicBU2mcK89HDgFXfyB-_tGkKgaVRIzEsI6OsW2a4L39un6TsrmszeZTmOZmeVcO79tMDq9WJBOLUxNrzA9plY9Urdf4VpW9l9Hs75v_xtznvoldFqach0qufAd0v4Ttmf7mDN41eWLPKzKIb4ABSD2nN-C2A6ooaDHk5ZAmZgMY" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-secondary text-white-pure font-label-md text-[11px] px-2 py-1 rounded mb-2 inline-block">Plant-Based</span>
-                    <h3 className="font-headline-md-mobile text-headline-md-mobile text-white-pure">Serat Alami</h3>
+                    <span className="bg-secondary text-white-pure font-label-md text-[11px] px-2 py-1 rounded mb-2 inline-block">{t('menu.plantBased')}</span>
+                    <h3 className="font-headline-md-mobile text-headline-md-mobile text-white-pure">{t('menu.naturalFiber')}</h3>
                   </div>
                 </div>
                 <div className="relative rounded-xl overflow-hidden group h-[200px]">
                   <ParallaxImage alt="Low Carb Menu" className="transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWawn3B-6neLi9MTnFnjIrdTYF8LAqer2m-X0TDYb5cDfogZzgvH-GMHkmgjfnf0sb-j_-I4nw8_tIHWPt7RVZGgVkr2ZSk7MEzHV8bHNUAfrlEP87G73bUIObzMYjjqr6DAH7wSFJYH8x4nLdEI3YS9DlEFImo8k19Do-DEXdNooet9_Z5nFrxuVMpsJHkT1gdGiA1mz4MWeUXc0Q88U2sBbsMNm2T8pJkWlNYKQqfdnsDSEsZodG" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
-                    <span className="bg-surface-tint text-white-pure font-label-md text-[11px] px-2 py-1 rounded mb-2 inline-block">Low Carb</span>
-                    <h3 className="font-headline-md-mobile text-headline-md-mobile text-white-pure">Diet Ringan</h3>
+                    <span className="bg-surface-tint text-white-pure font-label-md text-[11px] px-2 py-1 rounded mb-2 inline-block">{t('menu.lowCarb')}</span>
+                    <h3 className="font-headline-md-mobile text-headline-md-mobile text-white-pure">{t('menu.lightDiet')}</h3>
                   </div>
                 </div>
               </div>
@@ -120,7 +118,7 @@ export default function Menu() {
             {/* {t('menu.mainCourse')} */}
             <div className="space-y-4">
               <div className="flex justify-between items-center">
-                <FadeIn><h3 className="font-headline-md-mobile md:font-headline-md text-primary">Makanan Utama</h3></FadeIn>
+                <FadeIn><h3 className="font-headline-md-mobile md:font-headline-md text-primary">{t('menu.mainCourse')}</h3></FadeIn>
                 <div className="flex gap-2">
                   <button className="w-10 h-10 rounded-full border border-abu-netral flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onClick={(e) => scrollMenu(e, -300)}>
                     <span className="material-symbols-outlined">chevron_left</span>
@@ -154,7 +152,7 @@ export default function Menu() {
             {/* {t('menu.healthyDrinks')} */}
             <div className="space-y-4">
               <div className="flex justify-between items-center">
-                <FadeIn><h3 className="font-headline-md-mobile md:font-headline-md text-primary">Minuman Sehat</h3></FadeIn>
+                <FadeIn><h3 className="font-headline-md-mobile md:font-headline-md text-primary">{t('menu.healthyDrinks')}</h3></FadeIn>
                 <div className="flex gap-2">
                   <button className="w-10 h-10 rounded-full border border-abu-netral flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onClick={(e) => scrollMenu(e, -300)}>
                     <span className="material-symbols-outlined">chevron_left</span>
@@ -188,7 +186,7 @@ export default function Menu() {
             {/* {t('menu.dessert')} */}
             <div className="space-y-4">
               <div className="flex justify-between items-center">
-                <h3 className="font-headline-md-mobile md:font-headline-md text-primary">Pencuci Mulut</h3>
+                <h3 className="font-headline-md-mobile md:font-headline-md text-primary">{t('menu.dessert')}</h3>
                 <div className="flex gap-2">
                   <button className="w-10 h-10 rounded-full border border-abu-netral flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onClick={(e) => scrollMenu(e, -300)}>
                     <span className="material-symbols-outlined">chevron_left</span>

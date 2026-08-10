@@ -35,7 +35,7 @@ export default function Contact() {
         <div className="relative z-10 text-center px-4">
           <FadeIn><h1 className="font-display-lg text-white-pure text-[52px] md:text-[64px] mb-4">{t('contact.title')}</h1></FadeIn>
           <FadeIn delay={0.1}><p className="font-body-md text-white-pure/90 max-w-4xl mx-auto text-lg text-justify md:text-center">
-            Nusantara Meal Prep senantiasa hadir untuk memberikan solusi nutrisi terbaik yang disesuaikan dengan kebutuhan personal Anda. Jangan ragu untuk menghubungi kami jika Anda ingin berkonsultasi mengenai pemilihan paket makanan, memberikan masukan, atau sekadar bertanya lebih lanjut seputar layanan kami. Tim profesional kami akan dengan senang hati membantu Anda setiap saat.
+            {t('contact.description')}
           </p></FadeIn>
         </div>
       </section>
