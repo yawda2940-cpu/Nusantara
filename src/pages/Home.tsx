@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 import ParallaxImage from '../components/ParallaxImage';
 import FadeIn from '../components/FadeIn';
@@ -196,9 +197,9 @@ export default function Home() {
               <FadeIn><h2 className="font-headline-md-mobile text-headline-md-mobile md:font-headline-md md:text-headline-md text-white-pure mb-2">{t('home.menuTitle')}</h2></FadeIn>
               <p className="font-body-md text-body-md text-white-pure/80">{t('home.menuDesc')}</p>
             </div>
-            <a className="hidden md:inline-flex items-center gap-1 font-label-md text-label-md text-white-pure hover:text-white-pure/80 transition-colors" href="#">
+            <Link className="hidden md:inline-flex items-center gap-1 font-label-md text-label-md text-white-pure hover:text-white-pure/80 transition-colors" to="/menu">
               {t('home.seeAll')} <span className="material-symbols-outlined text-[18px]">chevron_right</span>
-            </a>
+            </Link>
           </div>
           
           <div className="relative group/carousel">
